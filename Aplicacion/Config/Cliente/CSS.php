@@ -8,8 +8,8 @@ namespace App\Config\Cliente;
  * siempre sin importar el ambiente de la aplicacion. Si se desea especificar archivos solo para un ambiente,
  * se debe definir una clave con el nombre del ambiente.
  */
-class CSS {
-
+class CSS
+{
     private $css = [
         [
             'href' => "/htdocs/img/icons/ia-icon.png",
@@ -38,14 +38,15 @@ class CSS {
         ],
     ];
 
-    function css() {
+    function css()
+    {
         return $this->css;
     }
 
-    static function archivos() {
+    static function archivos()
+    {
         $clase = new CSS();
 
         return $clase->css();
     }
-
 }

@@ -8,8 +8,8 @@ namespace App\Config\Cliente;
  * la aplicacion. Si se desea especificar archivos solo para un ambiente, se debe definir una clave con el nombre del
  * ambiente.
  */
-class JS {
-
+class JS
+{
     private $js = [
         'prod' => [
             'https://code.jquery.com/jquery-2.2.4.min.js',
@@ -44,14 +44,15 @@ class JS {
         ]
     ];
 
-    function js() {
+    function js()
+    {
         return $this->js;
     }
 
-    static function archivos() {
+    static function archivos()
+    {
         $class = new JS();
 
         return $class->js();
     }
-
 }

@@ -7,7 +7,6 @@ if (!defined('MAIL_CONTACTO'))
 
 define('DEFAULT_JADMIN', URL_BASE . '/jadmin/dashboard');
 
-
 $GLOBALS['_CSS'] = Cliente\CSS::archivos();
 $GLOBALS['_JS'] = Cliente\JS::archivos();
 $GLOBALS['configJVista'] = ['nroFilas' => 15];
