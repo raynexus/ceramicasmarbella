@@ -1,0 +1,79 @@
+.modal-exportacion {
+
+  h1, h2, h3, h4, p {
+    font-family: 'Saira';
+  }
+  .content {
+    display: relative;
+    padding: 20px;
+    color: #fff;
+    background-image: url("/htdocs/img/fondo-lgbox.jpg");
+    background-repeat: no-repeat;
+    border: 12px solid white;
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+
+    header {
+      text-align: center;
+    }
+    .titulo {
+      font-weight: bold !important;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      .fa {
+        color: @color-link-menu;
+      }
+      small {
+        font-size: 25px;
+        color: lighten(@gray-dark, 5%);
+        text-transform: none;
+        display: block;
+      }
+      h1 {
+        font-size: 52px;
+        margin-top: 0px;
+        font-weight: 600;
+      }
+      h2 {
+        font-size: 33px;
+        margin: 0;
+      }
+    }
+    .cuerpo {
+      margin-top: 80px !important;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  }
+  .text-minimo {
+    .mt-30;
+    color: @color-link-menu;
+    opacity: 0.5;
+    font-size: 1.2em;
+    text-align: left;
+    position: absolute;
+    margin: -10px 0px 0px 0px !important;
+
+  }
+  .titulo-detalle {
+    color: @color-link-menu;
+    font-size: 26px;
+  }
+  .detalle {
+    color: @color-link-menu;
+    font-size: 24px;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.66);
+  }
+  .close-modal {
+    background: none;
+    color: @color-link-menu;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.8em;
+    border: none;
+  }
+
+}

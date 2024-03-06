@@ -1,0 +1,71 @@
+
+.banner-section {
+
+  height: 500px;
+  margin: 0;
+  margin-top: -30px;
+  width: 100%;
+  background: darken(@brand-primary, 15%);
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+
+  @media (max-width: @screen-md-max) {
+    background-position: center 00px;
+
+  }
+  @media (min-width: 1000px) {
+    background-position: center -00px;
+  }
+  @media (min-width: 1300px) {
+    background-position: center -100px;
+  }
+  @media (min-width: 1500px) {
+    background-position: center -230px;
+  }
+  @media (min-width: 1600px) {
+    background-position: center -300px;
+  }
+  background-repeat: no-repeat;
+
+  .title-middle,
+  .title {
+    position: absolute;
+    z-index: 10;
+    width: 70%;
+    left: 15%;
+    text-align: center;
+    padding: 15px;
+    font-family: @fuente-titulos;
+    color: #fff;
+    .text-shadow;
+  }
+  .title-middle {
+    position: absolute;
+    z-index: 10;
+    font-size: 35px;
+    bottom: 45%;
+    font-weight: 300;
+  }
+  .title {
+    bottom: 5%;
+    font-size: 54px;
+    text-transform: uppercase;
+  }
+  .middle {
+    bottom: 38%;
+  }
+
+  @media (max-width: @screen-xs-max) {
+    .middle {
+      bottom: 30%;
+    }
+    .title {
+      font-size: 30px;
+    }
+  }
+
+}
+

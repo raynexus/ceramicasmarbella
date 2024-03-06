@@ -1,0 +1,62 @@
+.container-gallery {
+  width: 90%;
+  margin: auto;
+}
+
+.catalogo-container {
+  text-align: center;
+
+  .contenido {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    position: relative;
+    img {
+      height: auto;
+      width: 50%;
+      object-fit: cover;
+      .transicion(.3s);
+      &:hover {
+        opacity: .9;
+        .shadow-all;
+      }
+      z-index: 10;
+      &.feat {
+        opacity: 1;
+        cursor: pointer;
+        .transicion(.3s);
+        &:hover {
+          opacity: .9;
+          .transicion(.3s);
+        }
+      }
+
+    }
+    figcaption {
+      height: 0;
+      display: none;
+    }
+
+  }
+
+}
+
+//--------------------
+
+.galeria {
+  img {
+    .shadow-bottom;
+    .transicion(.3s);
+    cursor: pointer;
+    &:hover {
+      .shadow-all;
+      -ms-transform: scale(1.1); /* IE 9 */
+      -webkit-transform: scale(1.1); /* Safari */
+      transform: scale(1.1);
+      .transicion(.3s);
+    }
+  }
+}
+

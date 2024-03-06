@@ -1,0 +1,143 @@
+@color-link-menu: #fff;
+@navbar-height: 122px;
+@url-imagenes: '@{htdocs-path}img/';
+
+.navbar.menu-header {
+
+  background: @brand-primary;
+  color: @color-link-menu;
+  height: @navbar-height;
+  border: none;
+  position: relative;
+  z-index: 30;
+
+  h4.menu-header {
+
+    text-align: right;
+    font-size: 48px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    .text-shadow;
+
+  }
+
+  .navbar-brand {
+    padding: 10px;
+
+    img {
+      height: 100px;
+    }
+
+  }
+  .nav {
+
+    a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: block;
+
+      text-align: center;
+      height: 20px;
+      color: @color-link-menu;
+      opacity: .7;
+      border-top: 1px solid transparent;
+      .transicion(.3s);
+      &:hover, .focus {
+        color: @color-link-menu;
+        border-top-color: #fff;
+        .transicion(.3s);
+        opacity: 1;
+        .icon {
+
+          border: 2px solid #fff;
+          .transicion(.3s);
+
+        }
+      }
+      div.icon {
+
+        border: 2px solid transparent;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center center !important;
+
+        height: 45px;
+        width: 45px;
+        margin: auto;
+        margin-top: 15px;
+
+        .transicion(.3s);
+
+        &.home {
+          background-image: url('@{url-imagenes}iconos/home.png');
+        }
+        &.productos {
+          background-image: url('@{url-imagenes}iconos/productos.png');
+        }
+        &.nosotros {
+          background-image: url('@{url-imagenes}iconos/nosotros.png');
+        }
+        &.catalogos {
+          background-image: url('@{url-imagenes}iconos/catalogo.png');
+        }
+        &.distribuidores {
+          background-image: url('@{url-imagenes}iconos/distribuidores.png');
+        }
+        &.contacto {
+          background-image: url('@{url-imagenes}iconos/contacto.png');
+        }
+
+      }
+      //icon
+
+    }
+
+  }
+  //fin .nav
+
+  .overlay-menu {
+    background: rgba(255, 255, 255, .45);
+    height: 60px;
+    z-index: 1000;
+    width: 100%;
+    position: absolute;
+    bottom: -60px;
+    .box-shadow-medium;
+  }
+
+  @media (max-width: @screen-xs-max) {
+
+    h4.menu-header {
+      display: none;
+    }
+
+    .overlay-menu {
+      display: none;
+    }
+
+    .nav {
+      margin: 0 -15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background: @brand-primary;
+
+      .nav-item {
+        a {
+          height: auto;
+          opacity: 1;
+          .icon {
+            display: none;
+          }
+
+          &:hover {
+            background-color: @color-link-menu;
+          }
+
+        }
+      }
+
+    }
+
+  }
+
+}

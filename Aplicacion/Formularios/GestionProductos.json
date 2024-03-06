@@ -1,0 +1,233 @@
+{
+    "nombre": "Gestion Productos",
+    "query": "SELECT id_producto, identificador, nombre_comercial, uso, formato, producto, absorcion_agua, resistencia_mecanica, resistencia_rayado, aplicacion_esmalte, aplicacion_gotas, serigrafia, esfumatura, presentacion, peso, paleta, metros2_paleta, id_estatus_producto FROM t_productos",
+    "identificador": "GestionProductos",
+    "estructura": "3x4;4;1",
+    "clave_primaria": "id_producto",
+    "campos": [
+        {
+            "label": "Producto",
+            "name": "producto",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "producto",
+            "type": "text"
+        },
+        {
+            "label": "Nombre Comercial",
+            "name": "nombre_comercial",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "nombre_comercial",
+            "type": "text"
+        },
+        {
+            "label": "Uso",
+            "name": "uso",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "uso",
+            "type": "text"
+        },
+        {
+            "label": "Formato",
+            "name": "formato",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "formato",
+            "type": "text"
+        },
+        {
+            "label": "Absorci&oacute;n de Agua",
+            "name": "absorcion_agua",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "absorcion_agua",
+            "type": "text"
+        },
+        {
+            "label": "Resistencia Mecanica",
+            "name": "resistencia_mecanica",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "resistencia_mecanica",
+            "type": "text"
+        },
+        {
+            "label": "Resistencia rayado",
+            "name": "resistencia_rayado",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "resistencia_rayado",
+            "type": "text"
+        },
+        {
+            "label": "Aplicaci&oacute;n esmalte",
+            "name": "aplicacion_esmalte",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "aplicacion_esmalte",
+            "type": "text"
+        },
+        {
+            "label": "Aplicacion gotas",
+            "name": "aplicacion_gotas",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "aplicacion_gotas",
+            "type": "text"
+        },
+        {
+            "label": "Serigrafia",
+            "name": "serigrafia",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "serigrafia",
+            "type": "text"
+        },
+        {
+            "label": "Esfumatura",
+            "name": "esfumatura",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "___esfumatura",
+            "type": "text"
+        },
+        {
+            "label": "Presentacion",
+            "name": "presentacion",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "presentacion",
+            "type": "text"
+        },
+        {
+            "label": "peso",
+            "name": "peso",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "peso",
+            "type": "text"
+        },
+        {
+            "label": "Paleta",
+            "name": "paleta",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "paleta",
+            "type": "text"
+        },
+        {
+            "label": "Metros 2 paleta",
+            "name": "metros2_paleta",
+
+            "opciones": null,
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "metros2_paleta",
+            "type": "text"
+        },
+        {
+            "label": "Estatus Producto",
+            "name": "id_estatus_producto",
+
+            "opciones": "select id_estatus_producto,estatus_producto from m_estatus_productos",
+            "orden": null,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "id_estatus_producto",
+            "type": "select"
+        },
+        {
+            "label": false,
+            "name": "imagen",
+
+            "opciones": null,
+            "orden": 17,
+            "html": "Agregar Imagen",
+            "placeholder": null,
+            "class": "btn btn-default",
+            "data": {
+                "carga": "imagen"
+            },
+            "visibilidad": null,
+            "id": "imagen",
+            "type": "button"
+        }
+    ]
+}

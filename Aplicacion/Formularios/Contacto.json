@@ -1,0 +1,108 @@
+{
+    "nombre": "contacto",
+    "query": "select 1 as nombres,1 as apellidos,1 as empresa,1 as correo,1 as contacto,1 as telefono,1 as mensaje from s_formularios",
+    "estructura": "2;3;1x2",
+    "identificador": "Contacto",
+    "clave_primaria": null,
+    "campos": [
+        {
+            "label": "Nombres",
+            "name": "nombres",
+            "eventos": {
+                "obligatorio": {
+                    "mensaje": "Debe indicar su nombre"
+                }
+            },
+            "orden": "1",
+            "placeholder": "Nombres del contacto",
+            "visibilidad": "1",
+            "id": "nombres",
+            "type": "text"
+        },
+        {
+            "label": "Apellidos",
+            "name": "apellidos",
+            "eventos": {
+                "obligatorio": {
+                    "mensaje": "Debe indicar su apellido"
+                }
+            },
+            "orden": "2",
+            "placeholder": "Apellidos del contacto",
+            "visibilidad": "1",
+            "id": "apellidos",
+            "type": "text"
+        },
+        {
+            "label": "Empresa",
+            "name": "empresa",
+            "eventos": {
+                "obligatorio": {
+                    "mensaje": "Debe indicar la empresa"
+                }
+            },
+            "orden": "3",
+            "placeholder": "Nombre de la empresa",
+            "visibilidad": "1",
+            "id": "empresa",
+            "type": "text"
+        },
+        {
+            "label": "Tel&eacute;fono",
+            "name": "telefono",
+            "maxlength": "7",
+            "eventos": {
+                "obligatorio": {
+                    "mensaje": "Debe ingresar un n&uacute;mero de tel&eacute;fono"
+                },
+                "telefono": {
+                    "tipo": "multiple"
+                }
+            },
+            "orden": "5",
+            "placeholder": "Ejm: 0212-1234567",
+            "visibilidad": "1",
+            "id": "telefono",
+            "type": "Telefono"
+        },
+        {
+            "label": "Email",
+            "name": "correo",
+            "eventos": {
+                "obligatorio": {
+                    "mensaje": "Debe indicar un correo de contacto"
+                },
+                "email": {
+                    "mensaje": "Debe indicar un formato de correo valido"
+                }
+            },
+            "orden": "4",
+            "placeholder": "tucorreo@dominio.com",
+            "visibilidad": "1",
+            "id": "correo",
+            "type": "text"
+        },
+        {
+            "label": "&iquest;C&oacute;mo se entero de nosotros?",
+            "name": "contacto",
+            "eventos": {
+                "obligatorio": {
+                    "mensaje": "Debe indicar un correo de contacto"
+                }
+            },
+            "opciones": "Internet=Internet;Redes Sociales=Redes Sociales;Exposición=Exposición;Amigo=Amigo;Otro=Otro",
+            "orden": "6",
+            "visibilidad": "1",
+            "id": "contacto",
+            "type": "checkbox"
+        },
+        {
+            "label": "Comentarios / Requerimiento",
+            "name": "mensaje",
+            "orden": "7",
+            "visibilidad": "1",
+            "id": "mensaje",
+            "type": "textarea"
+        }
+    ]
+}

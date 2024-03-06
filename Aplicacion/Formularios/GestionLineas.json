@@ -1,0 +1,71 @@
+{
+    "nombre": "Gestion Lineas",
+    "query": "select id_linea, linea, id_estatus, imagen from m_lineas",
+    "identificador": "GestionLineas",
+    "estructura": "",
+    "clave_primaria": "id_linea",
+    "campos": {
+        "id_linea": {
+            "label": "id_linea",
+            "name": "id_linea",
+            "eventos": null,
+            "opciones": null,
+            "orden": 1,
+            "placeholder": null,
+            "class": null,
+            "data": null,
+            "visibilidad": null,
+            "id": "id_linea",
+            "type": "hidden"
+        },
+        "linea": {
+            "label": "L&iacute;nea",
+            "name": "linea",
+            "eventos": {
+                "obligatorio": {
+                    "mensaje": "Debe ingresar el nombre de la L&iacute;nea"
+                }
+            },
+            "opciones": null,
+            "orden": 2,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "linea",
+            "type": "text"
+        },
+        "estatus": {
+            "label": "Estatus",
+            "name": "id_estatus",
+            "eventos": {
+                "obligatorio": {
+                    "mensaje": "Debe ingresar el nombre de la L&iacute;nea"
+                }
+            },
+            "opciones": "=Seleccione;Select id_estatus,estatus from s_estatus where id_estatus!=3 and id_estatus!=4 order by id_estatus",
+            "orden": 3,
+            "placeholder": null,
+            "class": null,
+            "data_atributo": null,
+            "visibilidad": null,
+            "id": "id_estatus",
+            "type": "select"
+        },
+        "imagen": {
+            "label": false,
+            "name": "imagen",
+            "opciones": null,
+            "orden": 4,
+            "html": "Agregar Imagen",
+            "placeholder": null,
+            "class": "btn btn-default",
+            "data": {
+                "carga": "imagen"
+            },
+            "visibilidad": null,
+            "id": "imagen",
+            "type": "button"
+        }
+    }
+}
