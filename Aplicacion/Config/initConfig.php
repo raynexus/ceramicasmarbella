@@ -22,7 +22,7 @@ define('MANEJADOR_BD', 'MySQL');
  */
 define('manejadorBD', 'MySQL');
 
-define('URL_BASE', 'http://dev.ceramicasmarbella.local/');
+define('URL_BASE', '');
 
 define('NOMBRE_APP', 'Ceramicas Marbella C.A');
 define('LOGO_APP', '/htdocs/img/logos/logo_marbella_negro.png');
